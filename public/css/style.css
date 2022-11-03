@@ -16,11 +16,25 @@ a {
   background-size: 100%;
   font-size: 40px;
   padding: 130px 0;
+  font-family:'Yomogi', cursive;
 }
 
 .title-block h2 {
   margin: 0;
+  background-color: white;
+  opacity: 0.8;
 }
 
+.contents {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  padding: 30px;
+  box-shadow: 2px 2px 4px;
+  margin: 30px 30px;
+}
 
+.contents h3{
+  text-align: center;
+}
 
