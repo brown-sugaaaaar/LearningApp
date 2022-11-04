@@ -25,6 +25,10 @@ a {
   opacity: 0.8;
 }
 
+section {
+  margin: 100px auto;
+}
+
 .contents {
   width: 350px;
   height: 200px;
@@ -59,7 +63,7 @@ a {
 .profile {
   width: 80%;
   height: 300px;
-  margin: 30px auto;
+  margin: 200px auto;
   position: relative;
   padding: 1rem 2rem calc(1rem + 10px);
   background: #b2cbe4;
