@@ -26,15 +26,102 @@ a {
 }
 
 .contents {
-  width: 300px;
+  width: 350px;
   height: 200px;
   display: inline-block;
-  padding: 30px;
   box-shadow: 2px 2px 4px;
   margin: 30px 30px;
 }
 
-.contents h3{
-  text-align: center;
+.description {
+  background-color: white;
+  opacity: 0.8;
+  height: 200px;
 }
 
+.contents h3{
+  text-align: center;
+  margin:0;
+}
+
+.php-box {
+  background-image: url('/images/PHP-logo.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.laravel-box {
+  background-image: url('/images/laravel6-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.profile {
+  width: 80%;
+  height: 300px;
+  margin: 30px auto;
+  position: relative;
+  padding: 1rem 2rem calc(1rem + 10px);
+  background: #b2cbe4;
+}
+
+.profile h3 {
+  font-family:'Yomogi', cursive;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+span {
+  background: linear-gradient(transparent 50%, #fff 50%);
+}
+
+.profile-content {
+  display: flex;
+}
+
+.profile-content:after {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border: 2px solid #000;
+}
+
+.profile-top {
+  margin: 20px auto;
+  padding:0 50px;
+}
+
+.profile-top p {
+  text-align: center;
+}
+.profile img {
+  width: 150px;
+}
+
+.profile-body {
+  margin: auto;
+  padding:0 50px;
+}
+
+.btn {
+  width: 100px;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  font-family:'Yomogi', cursive;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 5px 0 gray; /* 影の太さ・色 */
+}
+
+footer {
+  background-color: gray;
+  padding: 20px;
+  opacity: 0.8;
+}
