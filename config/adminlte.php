@@ -368,10 +368,25 @@ return [
             ],
         ],
         ['header' => 'labels'],
+        // [
+        //     'text'       => 'important',
+        //     'icon_color' => 'red',
+        //     'url'        => '#',
+        // ],
+        // [
+        //     'text'       => 'warning',
+        //     'icon_color' => 'yellow',
+        //     'url'        => '#',
+        // ],
+        // [
+        //     'text'       => 'information',
+        //     'icon_color' => 'cyan',
+        //     'url'        => '#',
+        // ],
         [
-            'text'       => 'important',
+            'text'       => 'posts',
             'icon_color' => 'red',
-            'url'        => '#',
+            'url'        => '/admin/posts',
         ],
         [
             'text'       => 'warning',

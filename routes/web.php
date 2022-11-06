@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('php', 'PostController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/posts', 'AdminPostController@index');
+Route::get('/admin/post/new', 'AdminPostController@create');
+Route::post('/admin/post/store', 'AdminPostController@store');
