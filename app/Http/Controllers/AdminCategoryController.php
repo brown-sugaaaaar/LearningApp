@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
+use App\Category;
 use Illuminate\Http\Request;
 
-class AdminPostController extends Controller
+class AdminCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,10 @@ class AdminPostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('admin.posts.index',
+        $categories = Category::all();
+        return view('admin.categories.index',
         [
-            'posts' => $posts
+            'categories' => $categories
         ]);
     }
 
@@ -28,7 +28,7 @@ class AdminPostController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.new');
+        return view('admin.categories.new');
     }
 
     /**
@@ -39,8 +39,8 @@ class AdminPostController extends Controller
      */
     public function store(Request $request)
     {
-        $post = Post::create($request->all());
-        return redirect('/admin/posts');
+        $category = Category::create($request->all());
+        return redirect('/admin/categories');
     }
 
     /**

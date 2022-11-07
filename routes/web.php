@@ -22,6 +22,11 @@ Route::get('php', 'PostController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/admin/posts', 'AdminPostController@index');
 Route::get('/admin/post/new', 'AdminPostController@create');
 Route::post('/admin/post/store', 'AdminPostController@store');
+
+Route::get('/admin/categories', 'AdminCategoryController@index');
+Route::get('/admin/category/new', 'AdminCategoryController@create');
+Route::post('/admin/category/store', 'AdminCategoryController@store');
