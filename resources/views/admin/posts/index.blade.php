@@ -23,6 +23,7 @@
                 <tr>
                     <th>title</th>
                     <th>category_id</th>
+                    <th>category_name</th>
                     <th>created</th>
                     <th>updated</th>
                 </tr>
@@ -32,6 +33,7 @@
             <tr>
                 <td>{{ $post->title }}</td>
                 <td>{{ $post->category_id }}</td>
+                <td>{{ $post->category->name }}</td>
                 <td>{{ $post->created_at }}</td>
                 <td>{{ $post->updated_at }}</td>
                 <td>
