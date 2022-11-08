@@ -27,6 +27,7 @@
                     </div>
                 </div>
 
+                <!-- プルダウンでセレクトできるように設定したい -->
                 <div class="col-sm-12">
                     <div class="from-group">
                         <label>category_id</label>

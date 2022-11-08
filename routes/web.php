@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('php', 'PostController@index');
+Route::get('/', 'PostController@index');
+// Route::get('/php', 'PostController@index');
+// Route::get('/laravel', 'PostController@index');
+Route::get('/php', 'PostController@index');
 
 Auth::routes();
 
