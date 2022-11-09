@@ -19,54 +19,64 @@
 <section>
   <h2>Category</h2>
   <div class="php-box contents">
-    <div class="description">
-      <h3>PHPのナレッジ</h3>
-      <ul>
-        <li>phpの関数</li>
-        <li>データベース</li>
-        <li>if文の注意点</li>
-      </ul>
-    </div>
+    <a href="/category/php">
+      <div class="description">
+        <h3>PHPのナレッジ</h3>
+        <ul>
+          <li>phpの関数</li>
+          <li>データベース</li>
+          <li>if文の注意点</li>
+        </ul>
+      </div>
+    </a>
   </div>
   <div class="laravel-box contents">
-    <div class="description">
-      <h3>Laravel</h3>
-      <ul>
-        <li>laravelインストール</li>
-        <li>MVC</li>
-        <li>adminLTE</li>
-      </ul>
-    </div>
+    <a href="/category/laravel">
+      <div class="description">
+        <h3>Laravel</h3>
+        <ul>
+          <li>laravelインストール</li>
+          <li>MVC</li>
+          <li>adminLTE</li>
+        </ul>
+      </div>
+    </a>
   </div>
   <div class="sql-box contents">
-    <div class="description">
-      <h3>SQL</h3>
-      <ul>
-        <li>phpの関数</li>
-        <li>データベース</li>
-        <li>if文の注意点</li>
-      </ul>
-    </div>
+    <a href="/category/sql">
+      <div class="description">
+        <h3>SQL</h3>
+        <ul>
+          <li>sample</li>
+          <li>sample</li>
+          <li>sample</li>
+        </ul>
+      </div>
+    </a>
   </div>
   <div class="linux-box contents">
-    <div class="description">
-      <h3>Linux</h3>
-      <ul>
-        <li>phpの関数</li>
-        <li>データベース</li>
-        <li>if文の注意点</li>
-      </ul>
-    </div>
+    <a href="/category/linux">
+      <div class="description">
+        <h3>Linux</h3>
+        <ul>
+          <li>sample</li>
+          <li>sample</li>
+          <li>sample</li>
+        </ul>
+      </div>
+    </a>
   </div>
   <div class="nw-box contents">
-    <div class="description">
-      <h3>NetWork</h3>
-      <ul>
-        <li>phpの関数</li>
-        <li>データベース</li>
-        <li>if文の注意点</li>
-      </ul>
-    </div>
+    <a href="/category/network">
+      <div class="description">
+        <h3>NetWork</h3>
+        <ul>
+          <li>sample</li>
+          <li>sample</li>
+          <li>sample</li>
+        </ul>
+      </div>
+    </a>
   </div>
 </section>
 

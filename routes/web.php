@@ -17,13 +17,19 @@ Route::get('/', function () {
     return view('index');
 });
 
+//TOPページ
 Route::get('/', 'PostController@index');
-// Route::get('/php', 'PostController@index');
-// Route::get('/laravel', 'PostController@index');
-Route::get('/php', 'PostController@index');
+
+//categoryページ（カテゴリごとにbladeファイル作るパターン）
+// Route::get('/category/php', 'PostCategoryController@index');
+
+//categoryページ（全カテゴリで共通のbladeファイル使うパターン）
+Route::get('/category/{name}', 'PostCategoryController@index');
+Route::get('/category/{name}/{id}', 'PostCategoryController@show');
 
 Auth::routes();
 
+//admin(管理画面)ページ
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin/posts', 'AdminPostController@index');
