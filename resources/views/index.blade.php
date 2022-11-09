@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="title-block">
-      <h2><a href="#">エンジニア学習帳</a></h2>
+      <h2><a href="/">エンジニア学習帳</a></h2>
     </div>
   </header>
 <section>
@@ -87,10 +87,12 @@
       <ul>
         @foreach($posts as $post)
         <li>
-          <div>
-            <p>{{ $post->title }}</p>
-            <p>{{ $post->created_at }}</p>
-          </div>
+          <a href="/category/{{ $post->category->name }}/{{ $post->id }}">
+            <div>
+              <p>{{ $post->title }}</p>
+              <p>{{ $post->created_at }}</p>
+            </div>
+          </a>
         </li>
         @endforeach
       </ul>

@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="title-block">
-      <h2>エンジニア学習帳</h2>
+      <h2><a href="/">エンジニア学習帳</a></h2>
     </div>
   </header>
 
