@@ -24,7 +24,7 @@
       <ul>
         @foreach($post_category_index as $post_index)
         <li>
-          <a href="#">
+          <a href="{{ $post_index->category->name }}/{{ $post_index->id }}">
             <div>
               <p>{{ $post_index->title }}</p>
               <p>{{ $post_index->created_at }}</p>
