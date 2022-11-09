@@ -17,6 +17,7 @@
     </div>
   </header>
 <section>
+  <h2>Category</h2>
   <div class="php-box contents">
     <div class="description">
       <h3>PHPのナレッジ</h3>
@@ -70,11 +71,28 @@
 </section>
 
 <section>
+    <h2>New Posts</h2>
+
+    <div class="post-list">
+      <ul>
+        @foreach($posts as $post)
+        <li>
+          <div>
+            <p>{{ $post->title }}</p>
+            <p>{{ $post->created_at }}</p>
+          </div>
+        </li>
+        @endforeach
+      </ul>
+    </div>
+</section>
+
+<section>
   <div class="profile">
     <h3><span>Profile</span></h3>
     <div class="profile-content">
       <div class="profile-top">
-        <img src="/images/arashi_chan_cut.png">
+        <img src="/images/noname_cut.png">
         <p>no name</p>
       </div>
       <div class="profile-body">

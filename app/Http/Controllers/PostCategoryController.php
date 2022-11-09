@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Post;
-use App\Category;
 use Illuminate\Http\Request;
 
-class AdminPostController extends Controller
+class PostCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,15 @@ class AdminPostController extends Controller
      */
     public function index()
     {
+        //データを取得してcategoryごとにbladeファイルを出し分ける
+        //各カテゴリのindexページ
         $posts = Post::all();
-        return view('admin.posts.index',
+
+        if($pots->category_id === 1) {
+            $template = 'php.blade.php';
+        }
+
+        return view($tenmlate, 
         [
             'posts' => $posts
         ]);
@@ -29,7 +35,7 @@ class AdminPostController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.new');
+        //
     }
 
     /**
@@ -40,8 +46,7 @@ class AdminPostController extends Controller
      */
     public function store(Request $request)
     {
-        $post = Post::create($request->all());
-        return redirect('/admin/posts');
+        //
     }
 
     /**

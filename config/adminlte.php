@@ -389,9 +389,9 @@ return [
             'url'        => '/admin/posts',
         ],
         [
-            'text'       => 'warning',
+            'text'       => 'category',
             'icon_color' => 'yellow',
-            'url'        => '#',
+            'url'        => '/admin/categories',
         ],
         [
             'text'       => 'information',

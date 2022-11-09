@@ -3,14 +3,14 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Posts</h1>
+    <h1>Categories</h1>
 @stop
 
 @section('content')
 <div class="card">
     <div class="card-header">
         <div class="card-tools">
-            <a class="btn btn-success btn-sm" href="/admin/post/new">
+            <a class="btn btn-success btn-sm" href="/admin/category/new">
                 <i class="fas fa-plus"></i>
                 新規作成
             </a>
@@ -21,19 +21,19 @@
         <table id="data-table" class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>title</th>
-                    <th>category_id</th>
+                    <th>id</th>
+                    <th>name</th>
                     <th>created</th>
                     <th>updated</th>
                 </tr>
             </thead>
             <tbody>
-            @foreach($posts as $post)
+            @foreach($categories as $category)
             <tr>
-                <td>{{ $post->title }}</td>
-                <td>{{ $post->category_id }}</td>
-                <td>{{ $post->created_at }}</td>
-                <td>{{ $post->updated_at }}</td>
+                <td>{{ $category->id }}</td>
+                <td>{{ $category->name }}</td>
+                <td>{{ $category->created_at }}</td>
+                <td>{{ $category->updated_at }}</td>
                 <td>
                     <a class="btn btn-primary btn-sm" href="#">
                         <i class="fas fa-pencil-alt"></i>編集

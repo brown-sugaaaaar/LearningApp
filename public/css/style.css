@@ -29,6 +29,13 @@ section {
   margin: 100px auto;
 }
 
+section h2 {
+  text-align: center;
+  margin: 30px 30px;
+  font-family:'Yomogi', cursive;
+  font-size: 30px;
+}
+
 .contents {
   width: 350px;
   height: 200px;
@@ -43,7 +50,7 @@ section {
   height: 200px;
 }
 
-.contents h3{
+.contents h3 {
   text-align: center;
   margin:0;
 }
@@ -58,6 +65,18 @@ section {
   background-image: url('/images/laravel6-icon.png');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.post-list li {
+  list-style: none;
+  text-align: center;
+}
+
+.post-list div {
+  width: 800px;
+  height: 200px;
+  margin: 30px auto;
+  border: solid;
 }
 
 .profile {
