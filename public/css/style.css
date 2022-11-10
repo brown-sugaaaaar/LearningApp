@@ -44,27 +44,65 @@ section h2 {
   margin: 30px 30px;
 }
 
-.description {
+/* .description {
   background-color: white;
   opacity: 0.8;
   height: 200px;
-}
+} */
 
 .contents h3 {
   text-align: center;
-  margin:0;
+  margin: 0;
 }
 
-.php-box {
+/* .php-box {
   background-image: url('/images/PHP-logo.svg.png');
   background-size: contain;
   background-repeat: no-repeat;
+} */
+
+.php-box img {
+  margin: 20px 30px;
 }
 
-.laravel-box {
+/* .laravel-box {
   background-image: url('/images/laravel6-icon.png');
   background-size: contain;
   background-repeat: no-repeat;
+} */
+
+.laravel-box img {
+  margin: 20px 75px;
+}
+
+/* .sql-box {
+  background-image: url('/images/mysql-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.sql-box img {
+  margin: 20px;
+}
+
+/* .linux-box {
+  background-image: url('/images/linux_icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.linux-box img {
+  margin: 0 55px;
+}
+
+/* .nw-box {
+  background-image: url('/images/network-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.nw-box img {
+  margin: 0 50px;
 }
 
 .post-list li {

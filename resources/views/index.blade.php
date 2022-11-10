@@ -20,62 +20,67 @@
   <h2>Category</h2>
   <div class="php-box contents">
     <a href="/category/php">
-      <div class="description">
+      <img src="/images/PHP-logo.svg.png">
+      <!-- <div class="description">
         <h3>PHPのナレッジ</h3>
         <ul>
           <li>phpの関数</li>
           <li>データベース</li>
           <li>if文の注意点</li>
         </ul>
-      </div>
+      </div> -->
     </a>
   </div>
   <div class="laravel-box contents">
     <a href="/category/laravel">
-      <div class="description">
+      <img src="/images/laravel6-icon.png">
+      <!-- <div class="description">
         <h3>Laravel</h3>
         <ul>
           <li>laravelインストール</li>
           <li>MVC</li>
           <li>adminLTE</li>
         </ul>
-      </div>
+      </div> -->
     </a>
   </div>
   <div class="sql-box contents">
     <a href="/category/sql">
-      <div class="description">
+      <img src="/images/mysql-icon.png">
+      <!-- <div class="description">
         <h3>SQL</h3>
         <ul>
           <li>sample</li>
           <li>sample</li>
           <li>sample</li>
         </ul>
-      </div>
+      </div> -->
     </a>
   </div>
   <div class="linux-box contents">
     <a href="/category/linux">
-      <div class="description">
+      <img src="/images/linux_icon.png">
+      <!-- <div class="description">
         <h3>Linux</h3>
         <ul>
           <li>sample</li>
           <li>sample</li>
           <li>sample</li>
         </ul>
-      </div>
+      </div> -->
     </a>
   </div>
   <div class="nw-box contents">
     <a href="/category/network">
-      <div class="description">
+      <img src="/images/network-icon.png">
+      <!-- <div class="description">
         <h3>NetWork</h3>
         <ul>
           <li>sample</li>
           <li>sample</li>
           <li>sample</li>
         </ul>
-      </div>
+      </div> -->
     </a>
   </div>
 </section>
