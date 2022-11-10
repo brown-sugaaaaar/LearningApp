@@ -85,6 +85,10 @@
   </div>
 </section>
 
+<div class="under_line">
+  <img src="/images/under_line.png">
+</div>
+
 <section>
     <h2>New Posts</h2>
 

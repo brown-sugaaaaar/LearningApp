@@ -29,6 +29,14 @@ section {
   margin: 100px auto;
 }
 
+.under_line {
+  text-align: center;
+}
+
+.under_line img {
+  width: 1500px;
+}
+
 section h2 {
   text-align: center;
   width: 200px;
