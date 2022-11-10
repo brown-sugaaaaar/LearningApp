@@ -31,9 +31,11 @@ section {
 
 section h2 {
   text-align: center;
-  margin: 30px 30px;
+  width: 200px;
+  margin: 0 720px;
   font-family:'Yomogi', cursive;
-  font-size: 30px;
+  font-size: 40px;
+  background: linear-gradient(transparent 60%, #b8dff3 60%);
 }
 
 .contents {
@@ -113,7 +115,7 @@ section h2 {
 .post-list div {
   width: 800px;
   height: 200px;
-  margin: 30px auto;
+  margin: 30px 420px;
   border: solid;
 }
 

@@ -8,7 +8,7 @@
 
 @section('content')
 
-<form id="form" action="/admin/post/store" method="POST">
+<form id="form" action="/admin/post/store" method="POST" enctype="multipart/form-data">
 @csrf
     <div class="card card-outline card-primary">
         <div class="card-body">
@@ -17,6 +17,13 @@
                     <div class="from-group">
                         <label>title</label>
                         <input type="text" class="form-control" name="title">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="from-group">
+                        <label>thumbnail</label>
+                        <input type="file" class="form-control" name="image">
                     </div>
                 </div>
 
@@ -45,5 +52,5 @@
         </div>
     </div>
 </form>
-    
+
 @stop

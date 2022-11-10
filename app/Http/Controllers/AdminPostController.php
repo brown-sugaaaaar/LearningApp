@@ -41,6 +41,7 @@ class AdminPostController extends Controller
     public function store(Request $request)
     {
         $post = Post::create($request->all());
+        dd($request);
         return redirect('/admin/posts');
     }
 
