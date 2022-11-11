@@ -85,10 +85,6 @@
   </div>
 </section>
 
-<div class="under_line">
-  <img src="/images/under_line.png">
-</div>
-
 <section>
     <h2>New Posts</h2>
 
@@ -97,9 +93,14 @@
         @foreach($posts as $post)
         <li>
           <a href="/category/{{ $post->category->name }}/{{ $post->id }}">
-            <div>
-              <p>{{ $post->title }}</p>
-              <p>{{ $post->created_at }}</p>
+            <div class="post-content">
+              <div class="thumb">
+                <img src="/images/noname_cut.png" class="thumb_img">
+              </div>
+              <div class="summary">
+                <p>{{ $post->title }}</p>
+                <p>{{ $post->created_at }}</p>
+              </div>
             </div>
           </a>
         </li>
