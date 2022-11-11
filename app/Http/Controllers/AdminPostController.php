@@ -41,7 +41,10 @@ class AdminPostController extends Controller
     public function store(Request $request)
     {
         $post = Post::create($request->all());
-        dd($request);
+        $thumb = $request->file('thumb')->storeAs('/thumb',$post->thumb_name,'public');
+        //①filesystems.php の 'root' => storage_path('app/public/images'), で指定した場所に保存される
+        //②storeAs('①のパス配下（下のstorage内）に作成するファイル名','画像ファイルの名前','disk')
+
         return redirect('/admin/posts');
     }
 

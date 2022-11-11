@@ -22,6 +22,7 @@
             <thead>
                 <tr>
                     <th>title</th>
+                    <th>thumbnail</th>
                     <th>category_id</th>
                     <th>category_name</th>
                     <th>created</th>
@@ -32,6 +33,7 @@
             @foreach($posts as $post)
             <tr>
                 <td>{{ $post->title }}</td>
+                <td>{{ $post->thumb_name }}</td>
                 <td>{{ $post->category_id }}</td>
                 <td>{{ $post->category->name }}</td>
                 <td>{{ $post->created_at }}</td>
