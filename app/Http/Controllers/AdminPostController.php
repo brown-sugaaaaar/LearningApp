@@ -45,6 +45,16 @@ class AdminPostController extends Controller
         //①filesystems.php の 'root' => storage_path('app/public/images'), で指定した場所に保存される
         //②storeAs('①のパス配下（下のstorage内）に作成するファイル名','画像ファイルの名前','disk')
 
+        //下記はファイルの存在確認フラグ（一応作った）
+        // $file_path = public_path('/storage/images/thumb/'.$post->thumb_name);
+        // $file_exists = file_exists($file_path);
+
+        // if($file_exists) {
+        //     $file_exists_flg = 1;
+        // } else {
+        //     $file_exists_flg = 0;
+        // }
+    
         return redirect('/admin/posts');
     }
 
