@@ -39,14 +39,14 @@
                 <td>{{ $post->created_at }}</td>
                 <td>{{ $post->updated_at }}</td>
                 <td>
-                    <a class="btn btn-primary btn-sm" href="#">
+                    <a class="btn btn-primary btn-sm" href="/admin/post/edit/{{$post->id}}">
                         <i class="fas fa-pencil-alt"></i>編集
                     </a>
                 </td>
                 <td>
-                    <form action="#" method="POST">
+                    <form action="/admin/post/destroy/{{$post->id}}" method="POST">
                     @csrf
-                        <button type="submit" class="btn btn-danger btn-sm" action="#">
+                        <button type="submit" class="btn btn-danger btn-sm" action="/admin/post/destroy/{{$post->id}}">
                             <i class="fas fa-trash"></i>削除
                         </button>
                     </form>

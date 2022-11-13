@@ -77,7 +77,12 @@ class AdminPostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+        // dd($post);
+        return view('admin.posts.edit', 
+        [
+            'post' => $post
+        ]);
     }
 
     /**
@@ -100,6 +105,8 @@ class AdminPostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('/admin/posts');
     }
 }

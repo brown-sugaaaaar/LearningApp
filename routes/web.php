@@ -32,9 +32,13 @@ Auth::routes();
 //admin(管理画面)ページ
 Route::get('/home', 'HomeController@index')->name('home');
 
+//postの管理ページ
 Route::get('/admin/posts', 'AdminPostController@index');
 Route::get('/admin/post/new', 'AdminPostController@create');
 Route::post('/admin/post/store', 'AdminPostController@store');
+Route::get('/admin/post/edit/{id}', 'AdminPostController@edit');
+
+Route::post('/admin/post/destroy/{id}', 'AdminPostController@destroy');
 
 Route::get('/admin/categories', 'AdminCategoryController@index');
 Route::get('/admin/category/new', 'AdminCategoryController@create');
