@@ -94,7 +94,11 @@ class AdminPostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post = Post::find($id);
+        $post->update($request->all());
+        $thumb = $request->file('thumb')->storeAs('/thumb',$post->thumb_name,'public');
+
+        return redirect('/admin/posts');
     }
 
     /**

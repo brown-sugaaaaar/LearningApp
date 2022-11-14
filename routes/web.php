@@ -37,7 +37,7 @@ Route::get('/admin/posts', 'AdminPostController@index');
 Route::get('/admin/post/new', 'AdminPostController@create');
 Route::post('/admin/post/store', 'AdminPostController@store');
 Route::get('/admin/post/edit/{id}', 'AdminPostController@edit');
-
+Route::post('/admin/post/update/{id}', 'AdminPostController@update');
 Route::post('/admin/post/destroy/{id}', 'AdminPostController@destroy');
 
 Route::get('/admin/categories', 'AdminCategoryController@index');

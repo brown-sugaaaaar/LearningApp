@@ -95,11 +95,7 @@
           <a href="/category/{{ $post->category->name }}/{{ $post->id }}">
             <div class="post-content">
               <div class="thumb">
-                @if(!empty($post->thumb_name))
                 <img src="/storage/images/thumb/{{ $post->thumb_name }}" class="thumb_img">
-                @else
-                <img src="/storage/images/thumb/no_image_square.jpg" class="thumb_img">
-                @endif
               </div>
               <div class="summary">
                 <p>{{ $post->title }}</p>
