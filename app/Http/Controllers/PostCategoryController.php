@@ -38,7 +38,8 @@ class PostCategoryController extends Controller
 
         return view('category.index',
           [
-            'post_category_index' => $post_category_index
+            'post_category_index' => $post_category_index,
+            'category' => $category
           ]);
         }
 
