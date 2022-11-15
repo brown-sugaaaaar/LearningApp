@@ -41,7 +41,11 @@ class AdminPostController extends Controller
     public function store(Request $request)
     {
         $post = Post::create($request->all());
-        $thumb = $request->file('thumb')->storeAs('/thumb',$post->thumb_name,'public');
+
+        if(!empty($request->thumb_name)) {
+            $request->file('thumb')->storeAs('/thumb',$post->thumb_name,'public');
+        }
+
         //①filesystems.php の 'root' => storage_path('app/public/images'), で指定した場所に保存される
         //②storeAs('①のパス配下（下のstorage内）に作成するファイル名','画像ファイルの名前','disk')
 
@@ -54,7 +58,7 @@ class AdminPostController extends Controller
         // } else {
         //     $file_exists_flg = 0;
         // }
-    
+
         return redirect('/admin/posts');
     }
 
@@ -79,7 +83,7 @@ class AdminPostController extends Controller
     {
         $post = Post::find($id);
         // dd($post);
-        return view('admin.posts.edit', 
+        return view('admin.posts.edit',
         [
             'post' => $post
         ]);
@@ -96,7 +100,10 @@ class AdminPostController extends Controller
     {
         $post = Post::find($id);
         $post->update($request->all());
-        $thumb = $request->file('thumb')->storeAs('/thumb',$post->thumb_name,'public');
+
+        if(!empty($request->thumb_name)) {
+            $request->file('thumb')->storeAs('/thumb',$post->thumb_name,'public');
+        }
 
         return redirect('/admin/posts');
     }
@@ -111,6 +118,7 @@ class AdminPostController extends Controller
     {
         $post = Post::find($id);
         $post->delete();
+
         return redirect('/admin/posts');
     }
 }

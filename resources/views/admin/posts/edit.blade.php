@@ -8,7 +8,7 @@
 
 @section('content')
 
-<form id="form" action="/admin/post/store" method="POST" enctype="multipart/form-data">
+<form id="form" action="/admin/post/update/{{$post->id}}" method="POST" enctype="multipart/form-data">
 @csrf
     <div class="card card-outline card-primary">
         <div class="card-body">
