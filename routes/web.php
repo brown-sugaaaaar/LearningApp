@@ -27,6 +27,9 @@ Route::get('/', 'PostController@index');
 Route::get('/category/{name}', 'PostCategoryController@index');
 Route::get('/category/{name}/{id}', 'PostCategoryController@show');
 
+//contactページ
+Route::get('/contact/form', 'ContactFormController@index');
+
 Auth::routes();
 
 //admin(管理画面)ページ
