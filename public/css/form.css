@@ -1,3 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.title-block {
+  text-align: center;
+  background-image: url('/images/no-kopi-raito2.jpg');
+  background-size: 100%;
+  padding: 130px 0;
+  font-family:'Yomogi', cursive;
+}
+
+.title-block h2 {
+  margin: 0;
+  background-color: white;
+  opacity: 0.8;
+}
+
 h2 {
   font-family:'Yomogi', cursive;
+}
+
+
+
+
+footer {
+  background-color: gray;
+  padding: 20px;
+  opacity: 0.8;
 }

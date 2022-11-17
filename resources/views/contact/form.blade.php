@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/form.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
-  <title>Document</title>
-</head>
-<body>
+@include('layouts.form-header')
 
-<h2>Contact Form</h2>
+<form id="form">
 
-<form>
-  <label>name</label>
-  <input type="text">
+  <h2>Contact Form</h2>
 
-  <label>email</label>
-  <input type="email">
+  <div>
+    <div class="col-sm-4">
+        <label class="form-label" for="name">name</label>
+        <input type="text" class="form-control" id="name">
+    </div>
 
-  <label>subject</label>
-  <input type="text">
+    <div class="col-sm-4">
+        <label class="form-label" for="email">email</label>
+        <input type="email" class="form-control" id="email" placeholder="hogehoge@example.com">
+    </div>
 
-  <textarea></textarea>
+    <div class="col-sm-8">
+        <label class="form-label" for="subject">subject</label>
+        <input type="text" class="form-control" id="subject">
+    </div>
+
+    <div class="col-sm-8">
+        <label class="form-label" for="inquiry">inquiry</label>
+        <textarea class="form-control" rows="10" id="inquiry"></textarea>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">送信</button>
+
 </form>
 
-<div>
-  <h3>Email</h3>
-  <p>brownsuger1106@gmail.com</p>
-</div>
-  
-</body>
-</html>
+@include('layouts.footer')
