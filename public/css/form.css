@@ -13,7 +13,6 @@ a {
   background-image: url('/images/no-kopi-raito2.jpg');
   background-size: 100%;
   padding: 130px 0;
-  font-family:'Yomogi', cursive;
 }
 
 .title-block h2 {
@@ -26,7 +25,21 @@ h2 {
   font-family:'Yomogi', cursive;
 }
 
+.form-title {
+  text-align: center;
+  margin: 100px 0;
+}
 
+.form-all {
+  /* border: solid; */
+  margin: 5% 10%;
+  padding: 5% 10%;
+  
+}
+
+.btn {
+  margin: 10px;
+}
 
 
 footer {
