@@ -2,7 +2,7 @@
 
 <form id="form">
 
-  <h2 class="form-title">Contact Form</h2>
+  <h2 class="form-title display-3">Contact Form</h2>
 
   <div class="form-all">
     <div class="col-sm-4">

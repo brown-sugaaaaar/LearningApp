@@ -28,7 +28,7 @@ Route::get('/category/{name}', 'PostCategoryController@index');
 Route::get('/category/{name}/{id}', 'PostCategoryController@show');
 
 //contactページ
-Route::get('/contact/form', 'ContactFormController@index');
+Route::get('/contact/form', 'ContactController@index');
 
 Auth::routes();
 
@@ -46,3 +46,5 @@ Route::post('/admin/post/destroy/{id}', 'AdminPostController@destroy');
 Route::get('/admin/categories', 'AdminCategoryController@index');
 Route::get('/admin/category/new', 'AdminCategoryController@create');
 Route::post('/admin/category/store', 'AdminCategoryController@store');
+
+Route::get('/admin/contacts', 'AdminContactController@index');

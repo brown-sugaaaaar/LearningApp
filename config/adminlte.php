@@ -394,9 +394,9 @@ return [
             'url'        => '/admin/categories',
         ],
         [
-            'text'       => 'information',
+            'text'       => 'contacts',
             'icon_color' => 'cyan',
-            'url'        => '#',
+            'url'        => '/admin/contacts',
         ],
     ],
 
