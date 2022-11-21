@@ -30,6 +30,7 @@ Route::get('/category/{name}/{id}', 'PostCategoryController@show');
 //contactページ
 Route::get('/contact/form', 'ContactController@index');
 Route::post('/contact/confirm', 'ContactController@confirm');
+Route::post('/contact/thanks', 'ContactController@store');
 
 Auth::routes();
 

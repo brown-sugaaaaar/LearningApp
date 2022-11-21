@@ -25,7 +25,8 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $inputs = Contact::create($request->all());
+        return view('contact.thanks');
     }
 
 

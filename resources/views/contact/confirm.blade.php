@@ -4,7 +4,7 @@
 
 <div class="row">
   <div class="col-md-8 form">
-    <form>
+    <form method="post" action="/contact/thanks">
     @csrf
 
       <div class="form-group">
