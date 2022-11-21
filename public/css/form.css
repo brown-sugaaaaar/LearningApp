@@ -30,15 +30,12 @@ h2 {
   margin: 50px 0;
 }
 
-.form-all {
-  /* border: solid; */
-  margin: 5% 10%;
-  padding: 5% 10%;
-  
+.form {
+  margin: auto;
 }
 
 .btn {
-  margin: 10px;
+  margin-bottom: 30px;
 }
 
 
