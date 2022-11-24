@@ -33,6 +33,7 @@ class PostCategoryController extends Controller
         $category = Category::where('name',$name)->first();
 
         $post_category_index = Post::where('category_id',$category->id)
+            ->active()
             ->orderBy('created_at','DESC')
             ->get();
 

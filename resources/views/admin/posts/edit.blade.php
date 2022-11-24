@@ -48,6 +48,13 @@
                         <input type="number" name="category_id" class="form-control" value="{{$post->category_id}}">
                     </div>
                 </div>
+
+                <div class="col-sm-12">
+                    <div class="from-group">
+                        <label>非公開フラグ</label>
+                        <input type="text" name="display_flag" class="form-control" value="{{$post->display_flag}}">
+                    </div>
+                </div>
             </div>
         </div>
 

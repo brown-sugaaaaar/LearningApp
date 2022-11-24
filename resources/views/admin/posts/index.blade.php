@@ -25,6 +25,7 @@
                     <th>thumbnail</th>
                     <th>category_id</th>
                     <th>category_name</th>
+                    <th>status</th>
                     <th>created</th>
                     <th>updated</th>
                 </tr>
@@ -36,6 +37,11 @@
                 <td>{{ $post->thumb_name }}</td>
                 <td>{{ $post->category_id }}</td>
                 <td>{{ $post->category->name }}</td>
+                @if($post->display_flag === 0)
+                <td>公開</td>
+                @else
+                <td>非公開</td>
+                @endif
                 <td>{{ $post->created_at }}</td>
                 <td>{{ $post->updated_at }}</td>
                 <td>
