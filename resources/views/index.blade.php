@@ -18,75 +18,38 @@
     </div>
   </header>
 <section>
-  <h2>Category</h2>
-  <div class="php-box contents">
-    <a href="/category/php">
-      <img src="/images/PHP-logo.svg.png">
-      <!-- <div class="description">
-        <h3>PHPのナレッジ</h3>
-        <ul>
-          <li>phpの関数</li>
-          <li>データベース</li>
-          <li>if文の注意点</li>
-        </ul>
-      </div> -->
-    </a>
-  </div>
-  <div class="laravel-box contents">
-    <a href="/category/laravel">
-      <img src="/images/laravel6-icon.png">
-      <!-- <div class="description">
-        <h3>Laravel</h3>
-        <ul>
-          <li>laravelインストール</li>
-          <li>MVC</li>
-          <li>adminLTE</li>
-        </ul>
-      </div> -->
-    </a>
-  </div>
-  <div class="sql-box contents">
-    <a href="/category/sql">
-      <img src="/images/mysql-icon.png">
-      <!-- <div class="description">
-        <h3>SQL</h3>
-        <ul>
-          <li>sample</li>
-          <li>sample</li>
-          <li>sample</li>
-        </ul>
-      </div> -->
-    </a>
-  </div>
-  <div class="linux-box contents">
-    <a href="/category/linux">
-      <img src="/images/linux_icon.png">
-      <!-- <div class="description">
-        <h3>Linux</h3>
-        <ul>
-          <li>sample</li>
-          <li>sample</li>
-          <li>sample</li>
-        </ul>
-      </div> -->
-    </a>
-  </div>
-  <div class="nw-box contents">
-    <a href="/category/network">
-      <img src="/images/network-icon.png">
-      <!-- <div class="description">
-        <h3>NetWork</h3>
-        <ul>
-          <li>sample</li>
-          <li>sample</li>
-          <li>sample</li>
-        </ul>
-      </div> -->
-    </a>
-  </div>
+    <h2>Category</h2>
+      <div class="category">
+        <div class="php-box contents">
+          <a href="/category/php">
+            <img src="/images/PHP-logo.svg.png">
+          </a>
+        </div>
+        <div class="laravel-box contents">
+          <a href="/category/laravel">
+            <img src="/images/laravel6-icon.png">
+          </a>
+        </div>
+        <div class="sql-box contents">
+          <a href="/category/sql">
+            <img src="/images/mysql-icon.png">
+          </a>
+        </div>
+        <div class="linux-box contents">
+          <a href="/category/linux">
+            <img src="/images/linux_icon.png">
+          </a>
+        </div>
+        <div class="nw-box contents">
+          <a href="/category/network">
+            <img src="/images/network-icon.png">
+          </a>
+        </div>
+      </div>
 </section>
 
 <section>
+  <div class="post">
     <h2>New Posts</h2>
 
     <div class="post-list">
@@ -108,6 +71,7 @@
         @endforeach
       </ul>
     </div>
+  </div>
 </section>
 
 <section>

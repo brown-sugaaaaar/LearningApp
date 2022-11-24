@@ -43,7 +43,13 @@ h2 {
 }
 
 footer {
-  background-color: gray;
+  background-color: #c7d9db;
   padding: 20px;
-  opacity: 0.8;
+  font-family:'Yomogi', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sns p {
+  margin-bottom: 0;
 }
