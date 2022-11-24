@@ -53,3 +53,5 @@ Route::post('/admin/category/store', 'AdminCategoryController@store');
 //contact(問合せ)の管理ページ
 Route::get('/admin/contacts', 'AdminContactController@index');
 Route::get('/admin/contact/edit/{id}', 'AdminContactController@edit');
+Route::post('/admin/contact/update/{id}', 'AdminContactController@update');
+Route::post('/admin/contact/destroy/{id}', 'AdminContactController@destroy');

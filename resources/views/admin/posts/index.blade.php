@@ -46,7 +46,7 @@
                 <td>
                     <form action="/admin/post/destroy/{{$post->id}}" method="POST">
                     @csrf
-                        <button type="submit" class="btn btn-danger btn-sm" action="/admin/post/destroy/{{$post->id}}">
+                        <button type="submit" class="btn btn-danger btn-sm">
                             <i class="fas fa-trash"></i>削除
                         </button>
                     </form>

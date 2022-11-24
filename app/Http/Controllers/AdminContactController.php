@@ -22,4 +22,20 @@ class AdminContactController extends Controller
             'contact' => $contact
         ]);
     }
+
+    public function update(Request $request, $id) 
+    {
+        $contact = Contact::find($id);
+        $contact->update($request->all());
+
+        return redirect('admin/contacts');
+    }
+
+    public function destroy($id)
+    {
+        $contact = Contact::find($id);
+        $contact->delete();
+
+        return redirect('/admin/contacts');
+    }
 }

@@ -8,14 +8,6 @@
 
 @section('content')
 <div class="card">
-    <div class="card-header">
-        <div class="card-tools">
-            <a class="btn btn-success btn-sm" href="#">
-                <i class="fas fa-plus"></i>
-                新規作成
-            </a>
-        </div>
-    </div>
 
     <div class="card-body">
         <table id="data-table" class="table table-bordered table-striped">
@@ -42,9 +34,9 @@
                         </a>
                     </td>
                     <td>
-                        <form action="#" method="POST">
+                        <form action="/admin/contact/destroy/{{$contact->id}}" method="POST">
                         @csrf
-                            <button type="submit" class="btn btn-danger btn-sm" action="#">
+                            <button type="submit" class="btn btn-danger btn-sm">
                                 <i class="fas fa-trash"></i>削除
                             </button>
                         </form>

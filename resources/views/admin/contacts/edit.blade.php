@@ -8,7 +8,7 @@
 
 @section('content')
 
-<form id="form" action="#" method="POST" enctype="multipart/form-data">
+<form id="form" action="/admin/contact/update/{{$contact->id}}" method="POST" enctype="multipart/form-data">
 @csrf
     <div class="card card-outline card-primary">
         <div class="card-body">
@@ -16,7 +16,7 @@
                 <div class="col-sm-12">
                     <div class="from-group">
                         <label>id</label>
-                        <input type="text" class="form-control" name="id" value="{{$contact->id}}">
+                        <input type="text" class="form-control" name="id" value="{{$contact->id}}" disabled>
                     </div>
                 </div>
 
