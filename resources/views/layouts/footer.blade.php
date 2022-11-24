@@ -1,8 +1,8 @@
 <footer>
-    <ul>
-      <li><a href="/contact/form" target="_blank">CONTACT</li>
-      <li>SNS</li>
-    </ul>
+    <div>
+      <p><a href="/contact/form" target="_blank">CONTACT</a></p>
+      <p><a href="#">SNS</a></p>
+    </div>
   </footer>
 </body>
 </html>

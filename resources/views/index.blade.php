@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
   <title>Document</title>
 </head>
 <body>
@@ -130,10 +131,16 @@
 </section>
 
   <footer>
-    <ul>
-      <li><a href="/contact/form" target="_blank">CONTACT</li>
-      <li>SNS</li>
-    </ul>
+    <div>
+      <p><a href="/contact/form" target="_blank">CONTACT</a></p>
+
+      <div class="sns">
+        <p>SNS</p>
+        <a href="http://instagram.com/brownsuger_1106" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/brownsuger_xyz" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/brown-suger" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
 
   </footer>
 </body>
