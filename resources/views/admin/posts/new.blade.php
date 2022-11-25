@@ -22,15 +22,8 @@
 
                 <div class="col-sm-12">
                     <div class="from-group">
-                        <label>thumbnail</label>
-                        <input type="text" class="form-control" name="thumb_name" placeholder="拡張子の入力必須！！">
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="from-group">
                         <label>image</label>
-                        <input type="file" class="form-control" name="thumb">
+                        <input type="file" class="form-control" name="thumbnail">
                     </div>
                 </div>
 

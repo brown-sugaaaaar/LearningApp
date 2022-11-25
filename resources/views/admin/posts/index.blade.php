@@ -21,9 +21,8 @@
         <table id="data-table" class="table table-bordered table-striped">
             <thead>
                 <tr>
+                    <th>id</th>
                     <th>title</th>
-                    <th>thumbnail</th>
-                    <th>category_id</th>
                     <th>category_name</th>
                     <th>status</th>
                     <th>created</th>
@@ -33,9 +32,8 @@
             <tbody>
             @foreach($posts as $post)
             <tr>
+                <td>{{ $post->id }}</td>
                 <td>{{ $post->title }}</td>
-                <td>{{ $post->thumb_name }}</td>
-                <td>{{ $post->category_id }}</td>
                 <td>{{ $post->category->name }}</td>
                 @if($post->display_flag === 0)
                 <td>公開</td>

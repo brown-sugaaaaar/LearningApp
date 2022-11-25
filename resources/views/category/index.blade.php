@@ -10,7 +10,7 @@
           <a href="{{ $post_index->category->name }}/{{ $post_index->id }}">
           <div class="post-content">
             <div class="thumb">
-              <img src="/storage/images/thumb/{{ $post_index->thumb_name }}" class="thumb_img">
+              <img src="/storage/images/thumb/thumbnail{{ $post_index->id }}.png" class="thumb_img">
             </div>
             <div class="summary">
               <p>{{ $post_index->title }}</p>

@@ -20,17 +20,16 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="from-group">
-                        <label>thumbnail</label>
-                        <input type="text" class="form-control" name="thumb_name" value="{{$post->thumb_name}}">
+                        <label>image</label>
+                        <input type="file" class="form-control" name="thumbnail">
                     </div>
                 </div>
 
-                <div class="col-sm-12">
-                    <div class="from-group">
-                        <label>image</label>
-                        <input type="file" class="form-control" name="thumb">
+                <div class="col-sm-6">
+                    <div class="from-group" style="text-align: center;">
+                        <img src="/storage/images/thumb/thumbnail{{ $post->id }}.png" width="300px">
                     </div>
                 </div>
 
