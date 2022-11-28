@@ -41,6 +41,13 @@
                         <input type="number" name="category_id" class="form-control">
                     </div>
                 </div>
+
+                <div class="col-sm-1">
+                    <div class="from-group">
+                        <label>非公開</label>
+                        <input type="checkbox" name="display_flag" class="form-control" value="1">
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -15,10 +15,21 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at','DESC')->active()->take(5)->get();
+
+        foreach($posts as $post) {
+            $thumbnail_path = '/storage/images/thumb/thumbnail'.$post->id.'.png';
+            if(file_exists(public_path($thumbnail_path))) {
+                $post['thumbnail_path'] = $thumbnail_path;
+            } else {
+                $post['thumbnail_path'] = "/storage/images/thumb/no_image_square.jpg";
+            }
+        }
+        // dd($posts);
+
         return view('index',
-        [
-            'posts' => $posts
-        ]);
+            [
+                'posts' => $posts
+            ]);
     }
 
     /**
