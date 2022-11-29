@@ -16,6 +16,7 @@ class AdminPostController extends Controller
     public function index()
     {
         $posts = Post::all();
+
         return view('admin.posts.index',
         [
             'posts' => $posts
@@ -47,6 +48,7 @@ class AdminPostController extends Controller
             $request->file('thumbnail')->storeAs('/thumb',$thumbnail_name,'public');
         }
 
+        dd($post);
         //①filesystems.php の 'root' => storage_path('app/public/images'), で指定した場所に保存される
         //②storeAs('①のパス配下（下のstorage内）に作成するファイル名','画像ファイルの名前','disk')
 
