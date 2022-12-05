@@ -51,7 +51,8 @@
                 <div class="col-sm-1">
                     <div class="from-group">
                         <label>非公開</label>
-                        <input type="checkbox" name="display_flag" class="form-control" value="{{$post->display_flag}}">
+                        <input type="hidden" name="display_flag"  class="form-control" value="0">
+                        <input type="checkbox" name="display_flag" class="form-control" value="1" @if($post->display_flag == 1) checked @endif>
                     </div>
                 </div>
             </div>
