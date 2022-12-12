@@ -22,7 +22,7 @@
 
                 <div class="col-sm-6">
                     <div class="from-group">
-                        <label>image</label>
+                        <label>thumbnail</label>
                         <input type="file" class="form-control" name="thumbnail">
                     </div>
                 </div>
