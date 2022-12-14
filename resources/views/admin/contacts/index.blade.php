@@ -18,6 +18,7 @@
                     <th>name</th>
                     <th>created</th>
                     <th>updated</th>
+                    <th>phase_flag</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,6 +29,7 @@
                     <td>{{ $contact->name }}</td>
                     <td>{{ $contact->created_at }}</td>
                     <td>{{ $contact->updated_at }}</td>
+                    <td>{{ $contact->phase_flag }}</td>
                     <td>
                         <a class="btn btn-primary btn-sm" href="/admin/contact/edit/{{$contact->id}}">
                             <i class="fas fa-pencil-alt"></i>編集
